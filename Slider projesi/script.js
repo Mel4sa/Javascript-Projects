@@ -37,3 +37,15 @@ timeout=setTimeout(()=>{
 
 
 updateImg();
+
+const menuIcon = document.querySelector(".fa-bars");
+const sidebar = document.querySelector(".sidebar");
+const closeIcon = document.querySelector(".fa-xmark");
+
+menuIcon.addEventListener("click", () => {
+  sidebar.classList.add("showSidebar");
+});
+
+closeIcon.addEventListener("click", () => {
+  sidebar.classList.remove("showSidebar");
+});
